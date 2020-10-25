@@ -10,6 +10,7 @@ function setup() {
   for(let i = 0; i < 9; i++){
     if(i % 2 == 0){
       fill(blue);
+      noStroke();
       rect(0, i * d, width, (i + 1) * d);
     }
     if(i % 2 == 1){
@@ -24,6 +25,7 @@ function setup() {
   rect(0, 0, size, size);
 
   fill(255);
+  noStroke();
   rect(0, d * 2, size, d)
   rect(size / 2 - d / 2, 0, d, size)
   // BLANK[2] (hint: 白い十字を描くには rect を二つ描こう)
