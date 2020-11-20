@@ -11,13 +11,17 @@ function setup() {
   stroke(255);
   strokeWeight(3);
 
+
   cx = width / 2;
   cy = height / 2;
   maxR = min(width, height);
 
   drawCircle(black, maxR);
   drawArcs(green, red, maxR * 0.8);
-  // BLANK[1] (hint: drawArcs x 3, drawCircle x 1)
+  drawArcs(cream, black, maxR * 0.75);
+  drawArcs(green, red, maxR * 0.5);
+  drawArcs(cream, black, maxR * 0.45);
+  drawCircle(green, maxR * 0.1);// BLANK[1] (hint: drawArcs x 3, drawCircle x 1)
   drawCircle(red, maxR * 0.05);
 }
 
